@@ -1,7 +1,7 @@
 
 function App() {
   return (
-    <h1>PL Movie</h1>
+    <h1>Página principal</h1>
   );
 }
 
