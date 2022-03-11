@@ -25,7 +25,7 @@ public class ScoreService {
 	@Autowired
 	private ScoreRepository scoreRepository;
 	
-	@Transactional(readOnly = true)
+	@Transactional
 	public MovieDTO saveScore(ScoreDTO scoreDto) {		
 		User user = userRepository.findByEmail(scoreDto.getEmail());
 		
