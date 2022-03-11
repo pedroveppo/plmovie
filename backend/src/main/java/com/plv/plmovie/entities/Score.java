@@ -41,7 +41,7 @@ public class Score {
 		return value;
 	}
 
-	public void setUser(Double value) {
+	public void setValue(Double value) {
 		this.value = value;
 	}
 }
