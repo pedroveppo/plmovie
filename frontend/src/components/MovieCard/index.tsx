@@ -13,13 +13,13 @@ function MovieCard() {
 
     return (
         <div>
-            <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />
-            <div className="dsmovie-card-bottom-container">
+            <img className="plmovie-movie-card-image" src={movie.image} alt={movie.title} />
+            <div className="plmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <MovieScore />
 
                 <Link to={`/form/${movie.id}`}>
-                    <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+                    <div className="btn btn-primary plmovie-btn">Avaliar</div>
                 </Link>
             </div>
         </div>
