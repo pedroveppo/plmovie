@@ -11,11 +11,11 @@ function Pagination({page, onChange}:Props) {
     return (
         <div className="plmovie-pagination-container">
             <div className="plmovie-pagination-box">
-                <button className="plmovie-pagination-button" disabled={page.first} onClick={() => onChange(page.number--)} >
+                <button className="plmovie-pagination-button" disabled={page.first} onClick={() => onChange(page.number - 1)} >
                     <Arrow />
                 </button>
-                <p>{`${page.number++} de ${page.totalPages}`}</p>
-                <button className="plmovie-pagination-button" disabled={page.last} onClick={() => onChange(page.number++)} >
+                <p>{`${page.number + 1} de ${page.totalPages}`}</p>
+                <button className="plmovie-pagination-button" disabled={page.last} onClick={() => onChange(page.number + 1)} >
                     <Arrow className="plmovie-flip-horizontal" />
                 </button>
             </div>
